@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h1>Welcome to HappyEmail</h1>
+    <div class="site description">motivational quote server.</div>
+    <form action="/t3" method="POST">
+        <div class="Name">
+		    <label for=""><em>*</em> Name</label>
+    	    <input type="text" name="name">
+          <p class="formHint"><font size=2>Full name with spaces.</font></p>
+        </div>
+        <br>
+        <div class="Email">
+	        <label for=""><em>*</em> Email</label>
+    	    <input type="text" name="email">
+          <p class="formHint"><font size=2>With local and domain portions i.e. (free2rhyme@yahoo.com).</font></p>
+        </div>
+        <br>
+        <div class="Subscribe">
+	        <label for=""><em>*</em> Subscribe</label>
+	        <select name="subscribe" id="subscribe" class="selectInput">
+	        <option data-default-value="Placeholder text">Yes</option>
+    	    <option data-default-value="Placeholder text">No</option></select>
+        </div>
+        <br><br>
+        <div class="Register">
+	        <input type="submit" name="register" value="Register">
+	</div>
+    </form>
+</body>
+</html>

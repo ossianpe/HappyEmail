@@ -1,0 +1,27 @@
+{% from "_formhelpers.html" import render_field %}
+<div class="header"><h1>Welcome to <font color="blue">H</font>
+	<font color="green">a</font>
+	<font color="orange">p</font>
+	<font color="purple">p</font>
+	<font color="red">y</font>Email</h1>
+</div>
+<form method=post action="/register">
+  <dl>
+  <div class="name">
+    {{ render_field(form.name) }}
+  </div>
+  <br>
+  <div class="email">
+    {{ render_field(form.email) }}
+  </div>
+  <br>
+  <div class="tos message"><p>Terms of service:</p><font color="brown">"I hereby allow my email address to be spammed 
+  without digression. I understand that a request and dismissal from the email server may not modify my subscription status."</font>
+  </div> 
+  <br><br>
+  <div class="tos agreement">
+    {{ render_field(form.accept_tos) }}
+  </div>
+  </dl>
+  <p><input type=submit value=Register>
+</form>
