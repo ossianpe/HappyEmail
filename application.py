@@ -8,6 +8,7 @@ from data.database import Database
 import data.secure.private_data as pd
 
 app = Flask(__name__)
+app.debug=True
 
 MIN_NAME_CHARS=4
 MAX_NAME_CHARS=25
