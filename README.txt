@@ -22,8 +22,10 @@ lxml
 requests
     pip install requests
 sqlite3 (should be installed)
+flask
+    pip install flask
 wtforms
-	pip install wtforms
+    pip install wtforms
 
 Steps to run this program:
 
