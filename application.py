@@ -34,7 +34,11 @@ class RegistrationForm(Form):
                                         validators.Email("Not a valid email address")])
     accept_tos = BooleanField('I accept the TOS agreement.', [validators.Required("Check the box, moron.")])
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/home')
+def my_form():
+    return 'Home!'
+
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegistrationForm(request.form)
     if request.method == 'POST' and form.validate():
@@ -51,10 +55,6 @@ def register():
 @app.route('/registered')
 def registered():
     return 'Thank you for registering!'
-    
-@app.route('/home')
-def my_form():
-    return 'Home!'
 
 @app.route('/t3', methods=['POST'])
 def my_form_post():
