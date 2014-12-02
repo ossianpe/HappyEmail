@@ -1,0 +1,19 @@
+{% from "_formhelpers.html" import render_field %}
+<div class="header"><h1>Welcome to <font color="blue">H</font>
+	<font color="green">a</font>
+	<font color="orange">p</font>
+	<font color="purple">p</font>
+	<font color="red">y</font>Email</h1>
+</div>
+<form method=post action="/register">
+  <dl>
+  <div class="name">
+    {{ render_field(form.username) }}
+  </div>
+  <br>
+  <div class="email">
+    {{ render_field(form.password) }}
+  </div>
+  </dl>
+  <p><input type=submit value=Register>
+</form>

@@ -1,2 +1,5 @@
 .elasticbeanstalk/
 Backup/
+storage/database/email_addresses.db
+lib/secure/private_data.py
+lib/secure/private_data.pyc

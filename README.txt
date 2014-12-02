@@ -10,9 +10,13 @@
 
 Note: Do not need Google Custom Search credentials for debug mode.
 
-Dependencies that are not installed by default for OSX (tested on 10.9 & 10.10):
+--------------------------------------------------------------------
 
-Working pip & brew installs.
+Dependencies that are not installed by default
+
+OSX (tested on 10.9 & 10.10):
+
+**Need working pip & brew installs prior to installing dependencies**
 
 apiclient
     pip install --upgrade google-api-python-client
@@ -21,11 +25,38 @@ lxml
     pip install lxml
 requests
     pip install requests
-sqlite3 (should be installed)
+sqlite3
+	(should be installed with python)
 flask
     pip install flask
 wtforms
     pip install wtforms
+Flask-WTF
+	pip install Flask-WTF
+
+
+Linux (tested on Amazon Linux AMI [Red Hat], unconfirmed: maybe same for CentOS and related distros as well):
+
+pip
+	yum install python-pip
+apiclient
+    pip install --upgrade google-api-python-client
+lxml
+	yum install python-devel
+	yum install libxslt-devel
+	pip install lxml
+requests
+	(already installed)
+sqlite3
+	(should be installed with python)
+flask (as well as: Werkzeug Jinja2 itsdangerous markupsafe)
+    pip install flask
+wtforms
+    pip install wtforms
+Flask-WTF
+    pip install Flask-WTF
+
+--------------------------------------------------------------------
 
 Steps to run this program:
 
